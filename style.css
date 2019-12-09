@@ -1,0 +1,185 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+header {
+  width: 100%;
+  height: 175px;
+  background-color: #d9a08c;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid black;
+}
+
+
+h1 {
+  font-size: 30px;
+  margin-top: 10px;
+}
+
+
+button {
+  width: 300px;
+  height: 75px;
+  margin-right: 200px;
+  background-color: #d9a08c;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 25px;
+  border: 1px solid white;
+  outline: none;
+}
+
+
+button:hover {
+  background-color: #d7b4a7;
+}
+
+
+button:active {
+  background-color: #db7754;
+}
+
+select {
+  width: 200px;
+  height: 30px;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  margin-left: 10px;
+  filter: grayscale(70%) sepia(20%);
+  -webkit-border-radius: 100px;
+  -webkit-border-top-right-radius: 10px;
+  -moz-border-radius: 100px;
+  -moz-border-radius-topright: 10px;
+  border-radius: 100px;
+  border-top-right-radius: 10px;
+}
+
+.headerImage {
+  border-radius: 0px;
+}
+
+.headerTitle {
+  margin-left: 10px;
+  font-size: 70px;
+  color: white;
+}
+
+.selectionContainer {
+  position: relative;
+  height: 175px;
+  width: 200px;
+}
+
+.selectOne {
+  position: absolute;
+  top: 75px;
+}
+
+.selectTwo {
+  position: absolute;
+  top: 110px;
+}
+
+.buttonContainer {
+  height: 100%;
+  width: 400px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.headerImageContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 278px;
+  height: 150px;
+  margin-left: 100px;
+}
+
+.headerImage {
+  width: 100px;
+  height: 90%;
+}
+
+.headerLeft {
+  box-sizing: border-box;
+  flex-basis: 50%;
+  height: 100%;
+  line-height: 200px;
+  padding-left: 150px;
+}
+
+.headerRight {
+  flex-basis: 50%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.moreDogsButton {
+  width: 200px;
+  height: 75px;
+  font-size: 20px;
+  background-color: transparent;
+  color: white;
+  border: none;
+  text-decoration: none;
+  transition: 1s;
+}
+
+.moreDogsButton:focus {
+  outline: none;
+}
+
+.moreDogsButton:hover {
+  background-color: #fab7a0;
+  border: 1px solid white;
+  border-radius: 25px;
+}
+
+.moreDogsButton:active {
+background-color: #b47f6e;
+}
+
+.imageContainer {
+  margin-top: 25px;
+  width: 75%;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.imageDiv {
+  width: 300px;
+  height: 300px;
+}
+
+.selectTwo {
+  display: none;
+}
