@@ -97,9 +97,9 @@ function renderAllBreeds(data) {
       checkPage();
       getAllBreeds();
     } else {
-      window.location.hash = this.value;
-      getSubBreeds();
-      getBreedDogs();
+        window.location.hash = this.value;
+        getSubBreeds();
+        getBreedDogs();
     }
     imageContainer.innerHTML = "";
   });
@@ -110,7 +110,7 @@ function renderAllBreeds(data) {
 function getSubBreeds() {
   let currentBreed = window.location.hash.substring(1).split("-")[0];
   axios.get("https://dog.ceo/api/breed/" + currentBreed + "/list")
-    .then(function (response) {    
+    .then(function (response) {
       renderSubBreeds(response.data.message);
     })
     .catch(function (error) {
